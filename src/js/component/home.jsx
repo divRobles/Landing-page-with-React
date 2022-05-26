@@ -5,15 +5,36 @@ import rigoImage from "../../img/rigo-baby.jpg";
 
 import NavBar from "./NavBar.jsx";
 import Jumbotron from "./Jumbotron.jsx";
+import Card from "./Card.jsx";
+import Footer from "./Footer.jsx";
 
 //create your first component
 const Home = () => {
 	return (
 		<>
-			<NavBar />
-			<div className="container">
+			<div className="container-fluid">
+				<NavBar />
 
-			<Jumbotron />
+				<Jumbotron />
+
+				<div className="row">
+					<div className="col-12 col-lg-3">
+						<Card></Card>
+					</div>
+					<div className="col-12 col-lg-3">
+						<Card></Card>
+					</div>
+					<div className="col-12 col-lg-3">
+						<Card></Card>
+					</div>
+					<div className="col-12 col-lg-3">
+						<Card></Card>
+					</div>
+				</div>
+
+				<div className="row">
+					<Footer />
+				</div>
 			</div>
 		</>
 	);
